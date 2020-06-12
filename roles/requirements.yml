@@ -1,2 +1,7 @@
 # from galaxy
 - src: yatesr.timezone
+
+# local roles
+- src: https://github.com/krambone95/project_template/
+  version: master
+  name: auditd
