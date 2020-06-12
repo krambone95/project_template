@@ -1,6 +1,5 @@
 ---
-- name: auditd playbook
-  hosts: all
+- hosts: all
 
 - name: copy auditd file from repo
   copy:
