@@ -5,3 +5,4 @@
 - src: https://github.com/krambone95/project_template/
   version: master
   name: auditd
+  path: roles
