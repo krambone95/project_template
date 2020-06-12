@@ -1,4 +1,7 @@
 ---
+- name: auditd playbook
+  hosts: all
+
 - name: copy auditd file from repo
   copy:
     src:auditd.rules
