@@ -1,0 +1,10 @@
+---
+- name: copy auditd file from repo
+  copy:
+    src:auditd.rules
+    dest:/etc/audit/rules.d/audit.rules
+    register: result
+
+- name: restart auditd if updated
+  service: name=auditd state=reloaded
+  when: result is changed
